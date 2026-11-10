@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evalforge"
+version = "1.0.0"
+description = "Zero-dependency Python CLI for benchmarking local (Ollama) and cloud LLM code generation via AST safety gating, sandboxed test execution, and RLHF preference export."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Mickey Moore" }]
+dependencies = []
+
+[project.scripts]
+evalforge = "evalforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
