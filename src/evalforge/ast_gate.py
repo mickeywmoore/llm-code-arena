@@ -10,7 +10,6 @@ BANNED_MODULES = frozenset(
     {
         "ctypes",
         "http",
-        " importlib",
         "importlib",
         "multiprocessing",
         "os",
@@ -33,7 +32,6 @@ BANNED_MODULES = frozenset(
 BANNED_BUILTINS = frozenset(
     {
         "__import__",
-        " breakpoint",
         "breakpoint",
         "compile",
         "delattr",
